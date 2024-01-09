@@ -2,6 +2,7 @@ package com.middevs.reactor.spring.app.handler;
 
 import com.middevs.reactor.spring.app.document.Producto;
 import com.middevs.reactor.spring.app.service.ProductoService;
+import com.middevs.reactor.spring.app.service.ProductoServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
@@ -22,7 +23,7 @@ import static org.springframework.web.reactive.function.BodyInserters.fromObject
 public class ProductoHandler {
 
     @Autowired
-    private ProductoService productoService;
+    private ProductoServiceImpl productoService;
 
     @Autowired
     private Validator validator;
